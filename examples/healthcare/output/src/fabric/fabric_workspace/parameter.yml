@@ -1,5 +1,5 @@
 # ============================================================================
-# parameter.yml Ã¢â‚¬â€ fabric-cicd parameterization for fabric/fabric_workspace
+# parameter.yml â€” fabric-cicd parameterization for fabric/fabric_workspace
 # ============================================================================
 # Handles environment-specific value replacement when deploying to target
 # environments via the fabric-cicd library.
@@ -9,7 +9,7 @@
 # the optional item_type / item_name / file_path filters.
 # .platform files are excluded automatically by fabric-cicd.
 #
-# Current GUIDs (source/DEV workspace Ã¢â‚¬â€ pipeline_main.Notebook):
+# Current GUIDs (source/DEV workspace â€” pipeline_main.Notebook):
 #   Lakehouse : e6cd0b76-50e8-498f-9cd0-89251fae70c2
 #   Workspace : 27818fad-0450-42b9-a4a0-db84075ac8d7
 #
@@ -20,7 +20,7 @@
 find_replace:
 
   # ==========================================================================
-  # NOTEBOOK Ã¢â‚¬â€ Lakehouse ID Replacement
+  # NOTEBOOK â€” Lakehouse ID Replacement
   # ==========================================================================
 
   # Lakehouse GUID used in pipeline_main.Notebook/notebook-content.py
@@ -31,7 +31,7 @@ find_replace:
     item_type: "Notebook"
 
   # ==========================================================================
-  # NOTEBOOK Ã¢â‚¬â€ Workspace ID Replacement
+  # NOTEBOOK â€” Workspace ID Replacement
   # ==========================================================================
 
   # Workspace GUID used in pipeline_main.Notebook/notebook-content.py files
@@ -42,7 +42,7 @@ find_replace:
     item_type: "Notebook"
 
   # ==========================================================================
-  # DATA AGENT Ã¢â‚¬â€ Ontology Artifact ID Replacement
+  # DATA AGENT â€” Ontology Artifact ID Replacement
   # ==========================================================================
 
   # Ontology artifact ID used by DataAgent items to reference the ontology
@@ -53,12 +53,12 @@ find_replace:
   # Target: Dynamically resolved from HealthcareOntologyModel ontology ID
   - find_value: "b1eb253e-6048-9a94-42a5-c64487ae7541"
     replace_value:
-      _ALL_: "$items.Lakehouse.miqsadata.$id"
+      _ALL_: "$items.Ontology.HealthcareOntologyModel.$id"
     item_type: "DataAgent"
   
 
   # ==========================================================================
-  # SEMANTIC MODEL Ã¢â‚¬â€ SQL Endpoint Replacement
+  # SEMANTIC MODEL â€” SQL Endpoint Replacement
   # ==========================================================================
 
   # SQL endpoint URL used by SemanticModel items to connect to the lakehouse.
