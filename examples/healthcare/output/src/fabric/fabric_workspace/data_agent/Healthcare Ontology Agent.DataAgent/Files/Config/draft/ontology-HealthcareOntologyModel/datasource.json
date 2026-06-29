@@ -3,70 +3,61 @@
     "artifactId":  "b1eb253e-6048-9a94-42a5-c64487ae7541",
     "workspaceId":  "00000000-0000-0000-0000-000000000000",
     "dataSourceInstructions":  null,
-    "displayName":  "healthcare",
-    "type":  "lakehouse_tables",
+    "displayName":  "HealthcareOntologyModel",
+    "type":  "ontology",
     "userDescription":  null,
     "metadata":  {
 
                  },
     "elements":  [
                      {
-                         "id":  "healthcare",
+                         "id":  "patient",
                          "is_selected":  true,
-                         "display_name":  "healthcare",
-                         "type":  "lakehouse_tables.schema",
-                         "description":  "Scenario-generated healthcare schema",
+                         "display_name":  "patient",
+                         "type":  "ontology.entity",
+                         "description":  "class:Patient | outgoing:has_appointment-\u003eAppointment,diagnosed_with-\u003eDiagnosis | data:infra/fabric/data/healthcare/patient.csv",
                          "children":  [
-                                          {
-                                              "id":  "patient",
-                                              "is_selected":  true,
-                                              "display_name":  "patient",
-                                              "type":  "lakehouse_tables.table",
-                                              "description":  "class:Patient | outgoing:has_appointment-\u003eAppointment,diagnosed_with-\u003eDiagnosis | data:infra/fabric/data/healthcare/patient.csv",
-                                              "children":  [
 
-                                                           ]
-                                          },
-                                          {
-                                              "id":  "provider",
-                                              "is_selected":  true,
-                                              "display_name":  "provider",
-                                              "type":  "lakehouse_tables.table",
-                                              "description":  "class:Provider | outgoing:sees-\u003eAppointment,diagnoses-\u003eDiagnosis,prescribes-\u003ePrescription | data:infra/fabric/data/healthcare/provider.csv",
-                                              "children":  [
+                                      ]
+                     },
+                     {
+                         "id":  "provider",
+                         "is_selected":  true,
+                         "display_name":  "provider",
+                         "type":  "ontology.entity",
+                         "description":  "class:Provider | outgoing:sees-\u003eAppointment,diagnoses-\u003eDiagnosis,prescribes-\u003ePrescription | data:infra/fabric/data/healthcare/provider.csv",
+                         "children":  [
 
-                                                           ]
-                                          },
-                                          {
-                                              "id":  "appointment",
-                                              "is_selected":  true,
-                                              "display_name":  "appointment",
-                                              "type":  "lakehouse_tables.table",
-                                              "description":  "class:Appointment | incoming:has_appointment\u003c-Patient,sees\u003c-Provider | data:infra/fabric/data/healthcare/appointment.csv",
-                                              "children":  [
+                                      ]
+                     },
+                     {
+                         "id":  "appointment",
+                         "is_selected":  true,
+                         "display_name":  "appointment",
+                         "type":  "ontology.entity",
+                         "description":  "class:Appointment | incoming:has_appointment\u003c-Patient,sees\u003c-Provider | data:infra/fabric/data/healthcare/appointment.csv",
+                         "children":  [
 
-                                                           ]
-                                          },
-                                          {
-                                              "id":  "diagnosis",
-                                              "is_selected":  true,
-                                              "display_name":  "diagnosis",
-                                              "type":  "lakehouse_tables.table",
-                                              "description":  "class:Diagnosis | outgoing:treated_by-\u003ePrescription | incoming:diagnosed_with\u003c-Patient,diagnoses\u003c-Provider | data:infra/fabric/data/healthcare/diagnosis.csv",
-                                              "children":  [
+                                      ]
+                     },
+                     {
+                         "id":  "diagnosis",
+                         "is_selected":  true,
+                         "display_name":  "diagnosis",
+                         "type":  "ontology.entity",
+                         "description":  "class:Diagnosis | outgoing:treated_by-\u003ePrescription | incoming:diagnosed_with\u003c-Patient,diagnoses\u003c-Provider | data:infra/fabric/data/healthcare/diagnosis.csv",
+                         "children":  [
 
-                                                           ]
-                                          },
-                                          {
-                                              "id":  "prescription",
-                                              "is_selected":  true,
-                                              "display_name":  "prescription",
-                                              "type":  "lakehouse_tables.table",
-                                              "description":  "class:Prescription | incoming:treated_by\u003c-Diagnosis,prescribes\u003c-Provider | data:infra/fabric/data/healthcare/prescription.csv",
-                                              "children":  [
+                                      ]
+                     },
+                     {
+                         "id":  "prescription",
+                         "is_selected":  true,
+                         "display_name":  "prescription",
+                         "type":  "ontology.entity",
+                         "description":  "class:Prescription | incoming:treated_by\u003c-Diagnosis,prescribes\u003c-Provider | data:infra/fabric/data/healthcare/prescription.csv",
+                         "children":  [
 
-                                                           ]
-                                          }
                                       ]
                      }
                  ]
