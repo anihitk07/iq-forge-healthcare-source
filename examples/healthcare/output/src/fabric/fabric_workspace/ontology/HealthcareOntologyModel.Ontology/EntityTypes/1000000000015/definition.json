@@ -1,0 +1,39 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+    "id":  "1000000000015",
+    "namespace":  "usertypes",
+    "baseEntityTypeId":  null,
+    "name":  "Diagnosis",
+    "entityIdParts":  [
+                          "1000000000016"
+                      ],
+    "displayNamePropertyId":  "1000000000017",
+    "namespaceType":  "Custom",
+    "visibility":  "Visible",
+    "properties":  [
+                       {
+                           "id":  "1000000000016",
+                           "name":  "DiagnosisId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000017",
+                           "name":  "Name",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000018",
+                           "name":  "PrescriptionId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       }
+                   ],
+    "timeseriesProperties":  [
+
+                             ]
+}

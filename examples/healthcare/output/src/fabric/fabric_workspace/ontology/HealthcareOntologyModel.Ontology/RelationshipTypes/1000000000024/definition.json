@@ -1,0 +1,13 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+    "namespace":  "usertypes",
+    "id":  "1000000000024",
+    "name":  "diagnosed_with",
+    "namespaceType":  "Custom",
+    "source":  {
+                   "entityTypeId":  "1000000000001"
+               },
+    "target":  {
+                   "entityTypeId":  "1000000000015"
+               }
+}

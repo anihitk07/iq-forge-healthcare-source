@@ -1,0 +1,32 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+    "id":  "1000000000012",
+    "namespace":  "usertypes",
+    "baseEntityTypeId":  null,
+    "name":  "Appointment",
+    "entityIdParts":  [
+                          "1000000000013"
+                      ],
+    "displayNamePropertyId":  "1000000000014",
+    "namespaceType":  "Custom",
+    "visibility":  "Visible",
+    "properties":  [
+                       {
+                           "id":  "1000000000013",
+                           "name":  "AppointmentId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000014",
+                           "name":  "Name",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       }
+                   ],
+    "timeseriesProperties":  [
+
+                             ]
+}

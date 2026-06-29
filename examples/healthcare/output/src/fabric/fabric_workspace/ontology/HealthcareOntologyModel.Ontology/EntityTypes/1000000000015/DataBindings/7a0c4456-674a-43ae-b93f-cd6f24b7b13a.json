@@ -1,0 +1,28 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+    "id":  "7a0c4456-674a-43ae-b93f-cd6f24b7b13a",
+    "dataBindingConfiguration":  {
+                                     "dataBindingType":  "NonTimeSeries",
+                                     "propertyBindings":  [
+                                                              {
+                                                                  "sourceColumnName":  "DiagnosisId",
+                                                                  "targetPropertyId":  "1000000000016"
+                                                              },
+                                                              {
+                                                                  "sourceColumnName":  "Name",
+                                                                  "targetPropertyId":  "1000000000017"
+                                                              },
+                                                              {
+                                                                  "sourceColumnName":  "PrescriptionId",
+                                                                  "targetPropertyId":  "1000000000018"
+                                                              }
+                                                          ],
+                                     "sourceTableProperties":  {
+                                                                   "sourceType":  "LakehouseTable",
+                                                                   "workspaceId":  "27818fad-0450-42b9-a4a0-db84075ac8d7",
+                                                                   "itemId":  "e6cd0b76-50e8-498f-9cd0-89251fae70c2",
+                                                                   "sourceTableName":  "diagnosis",
+                                                                   "sourceSchema":  "dbo"
+                                                               }
+                                 }
+}

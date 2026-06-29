@@ -1,0 +1,32 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+    "id":  "17f0fb6f-8648-4964-926d-b23e791b84c9",
+    "dataBindingConfiguration":  {
+                                     "dataBindingType":  "NonTimeSeries",
+                                     "propertyBindings":  [
+                                                              {
+                                                                  "sourceColumnName":  "PatientId",
+                                                                  "targetPropertyId":  "1000000000002"
+                                                              },
+                                                              {
+                                                                  "sourceColumnName":  "Name",
+                                                                  "targetPropertyId":  "1000000000003"
+                                                              },
+                                                              {
+                                                                  "sourceColumnName":  "AppointmentId",
+                                                                  "targetPropertyId":  "1000000000004"
+                                                              },
+                                                              {
+                                                                  "sourceColumnName":  "DiagnosisId",
+                                                                  "targetPropertyId":  "1000000000005"
+                                                              }
+                                                          ],
+                                     "sourceTableProperties":  {
+                                                                   "sourceType":  "LakehouseTable",
+                                                                   "workspaceId":  "27818fad-0450-42b9-a4a0-db84075ac8d7",
+                                                                   "itemId":  "e6cd0b76-50e8-498f-9cd0-89251fae70c2",
+                                                                   "sourceTableName":  "patient",
+                                                                   "sourceSchema":  "dbo"
+                                                               }
+                                 }
+}

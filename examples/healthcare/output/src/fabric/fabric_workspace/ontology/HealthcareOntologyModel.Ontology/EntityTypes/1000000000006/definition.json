@@ -1,0 +1,53 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+    "id":  "1000000000006",
+    "namespace":  "usertypes",
+    "baseEntityTypeId":  null,
+    "name":  "Provider",
+    "entityIdParts":  [
+                          "1000000000007"
+                      ],
+    "displayNamePropertyId":  "1000000000008",
+    "namespaceType":  "Custom",
+    "visibility":  "Visible",
+    "properties":  [
+                       {
+                           "id":  "1000000000007",
+                           "name":  "ProviderId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000008",
+                           "name":  "Name",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000009",
+                           "name":  "AppointmentId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000010",
+                           "name":  "DiagnosisId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000011",
+                           "name":  "PrescriptionId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       }
+                   ],
+    "timeseriesProperties":  [
+
+                             ]
+}

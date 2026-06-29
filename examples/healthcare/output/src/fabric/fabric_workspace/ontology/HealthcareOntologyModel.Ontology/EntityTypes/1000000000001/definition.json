@@ -1,0 +1,46 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+    "id":  "1000000000001",
+    "namespace":  "usertypes",
+    "baseEntityTypeId":  null,
+    "name":  "Patient",
+    "entityIdParts":  [
+                          "1000000000002"
+                      ],
+    "displayNamePropertyId":  "1000000000003",
+    "namespaceType":  "Custom",
+    "visibility":  "Visible",
+    "properties":  [
+                       {
+                           "id":  "1000000000002",
+                           "name":  "PatientId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000003",
+                           "name":  "Name",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000004",
+                           "name":  "AppointmentId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       },
+                       {
+                           "id":  "1000000000005",
+                           "name":  "DiagnosisId",
+                           "redefines":  null,
+                           "baseTypeNamespaceType":  null,
+                           "valueType":  "String"
+                       }
+                   ],
+    "timeseriesProperties":  [
+
+                             ]
+}
