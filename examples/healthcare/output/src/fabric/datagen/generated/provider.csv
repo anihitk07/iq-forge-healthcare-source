@@ -1,4 +1,4 @@
-"ProviderId","Name","AppointmentId","DiagnosisId","PrescriptionId"
+﻿"ProviderId","Name","AppointmentId","DiagnosisId","PrescriptionId"
 "PRO-001","Provider 1","APP-001","DIA-001","PRE-001"
 "PRO-002","Provider 2","APP-002","DIA-002","PRE-002"
 "PRO-003","Provider 3","APP-003","DIA-003","PRE-003"

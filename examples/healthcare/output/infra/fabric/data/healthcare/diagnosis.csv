@@ -1,4 +1,4 @@
-"DiagnosisId","Name","PrescriptionId"
+﻿"DiagnosisId","Name","PrescriptionId"
 "DIA-001","Diagnosis 1","PRE-001"
 "DIA-002","Diagnosis 2","PRE-002"
 "DIA-003","Diagnosis 3","PRE-003"

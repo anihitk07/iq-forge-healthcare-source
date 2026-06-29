@@ -1,4 +1,4 @@
-"PatientId","Name","AppointmentId","DiagnosisId"
+﻿"PatientId","Name","AppointmentId","DiagnosisId"
 "PAT-001","Patient 1","APP-001","DIA-001"
 "PAT-002","Patient 2","APP-002","DIA-002"
 "PAT-003","Patient 3","APP-003","DIA-003"
