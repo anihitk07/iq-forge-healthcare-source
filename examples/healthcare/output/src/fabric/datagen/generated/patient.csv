@@ -1,0 +1,6 @@
+﻿"PatientId","Name","AppointmentId","DiagnosisId"
+"PAT-001","Patient 1","APP-001","DIA-001"
+"PAT-002","Patient 2","APP-002","DIA-002"
+"PAT-003","Patient 3","APP-003","DIA-003"
+"PAT-004","Patient 4","APP-004","DIA-004"
+"PAT-005","Patient 5","APP-005","DIA-005"

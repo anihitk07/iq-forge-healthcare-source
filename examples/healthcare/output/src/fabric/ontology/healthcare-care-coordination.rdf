@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:hc="http://example.org/healthcare#">
+
+  <owl:Ontology rdf:about="http://example.org/healthcare"/>
+
+  <owl:Class rdf:about="http://example.org/healthcare#Patient"/>
+  <owl:Class rdf:about="http://example.org/healthcare#Provider"/>
+  <owl:Class rdf:about="http://example.org/healthcare#Appointment"/>
+  <owl:Class rdf:about="http://example.org/healthcare#Diagnosis"/>
+  <owl:Class rdf:about="http://example.org/healthcare#Prescription"/>
+
+  <owl:ObjectProperty rdf:about="http://example.org/healthcare#has_appointment">
+    <rdfs:domain rdf:resource="http://example.org/healthcare#Patient"/>
+    <rdfs:range rdf:resource="http://example.org/healthcare#Appointment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://example.org/healthcare#sees">
+    <rdfs:domain rdf:resource="http://example.org/healthcare#Provider"/>
+    <rdfs:range rdf:resource="http://example.org/healthcare#Appointment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://example.org/healthcare#diagnosed_with">
+    <rdfs:domain rdf:resource="http://example.org/healthcare#Patient"/>
+    <rdfs:range rdf:resource="http://example.org/healthcare#Diagnosis"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://example.org/healthcare#diagnoses">
+    <rdfs:domain rdf:resource="http://example.org/healthcare#Provider"/>
+    <rdfs:range rdf:resource="http://example.org/healthcare#Diagnosis"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://example.org/healthcare#treated_by">
+    <rdfs:domain rdf:resource="http://example.org/healthcare#Diagnosis"/>
+    <rdfs:range rdf:resource="http://example.org/healthcare#Prescription"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://example.org/healthcare#prescribes">
+    <rdfs:domain rdf:resource="http://example.org/healthcare#Provider"/>
+    <rdfs:range rdf:resource="http://example.org/healthcare#Prescription"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
