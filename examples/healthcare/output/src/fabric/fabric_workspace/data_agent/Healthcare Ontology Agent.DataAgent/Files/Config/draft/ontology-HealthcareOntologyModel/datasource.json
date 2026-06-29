@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "b1eb253e-6048-9a94-42a5-c64487ae7541",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "HealthcareOntologyModel",
+  "type": "ontology",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "patient",
+      "is_selected": true,
+      "display_name": "patient",
+      "type": "ontology.entity",
+      "description": "class:Patient | outgoing:has_appointment->Appointment,diagnosed_with->Diagnosis | data:src/fabric/datagen/generated/patient.csv",
+      "children": []
+    },
+    {
+      "id": "provider",
+      "is_selected": true,
+      "display_name": "provider",
+      "type": "ontology.entity",
+      "description": "class:Provider | outgoing:sees->Appointment,diagnoses->Diagnosis,prescribes->Prescription | data:src/fabric/datagen/generated/provider.csv",
+      "children": []
+    },
+    {
+      "id": "appointment",
+      "is_selected": true,
+      "display_name": "appointment",
+      "type": "ontology.entity",
+      "description": "class:Appointment | incoming:has_appointment<-Patient,sees<-Provider | data:src/fabric/datagen/generated/appointment.csv",
+      "children": []
+    },
+    {
+      "id": "diagnosis",
+      "is_selected": true,
+      "display_name": "diagnosis",
+      "type": "ontology.entity",
+      "description": "class:Diagnosis | outgoing:treated_by->Prescription | incoming:diagnosed_with<-Patient,diagnoses<-Provider | data:src/fabric/datagen/generated/diagnosis.csv",
+      "children": []
+    },
+    {
+      "id": "prescription",
+      "is_selected": true,
+      "display_name": "prescription",
+      "type": "ontology.entity",
+      "description": "class:Prescription | incoming:treated_by<-Diagnosis,prescribes<-Provider | data:src/fabric/datagen/generated/prescription.csv",
+      "children": []
+    }
+  ]
+}
