@@ -3,7 +3,7 @@
     "namespace":  "usertypes",
     "id":  "1000000000025",
     "name":  "diagnoses",
-    "namespaceType":  "Custom",
+    "namespaceType":  "Imported",
     "source":  {
                    "entityTypeId":  "1000000000006"
                },

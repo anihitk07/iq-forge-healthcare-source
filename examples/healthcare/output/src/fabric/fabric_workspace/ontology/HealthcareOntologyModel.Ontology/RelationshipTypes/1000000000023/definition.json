@@ -3,7 +3,7 @@
     "namespace":  "usertypes",
     "id":  "1000000000023",
     "name":  "sees",
-    "namespaceType":  "Custom",
+    "namespaceType":  "Imported",
     "source":  {
                    "entityTypeId":  "1000000000006"
                },

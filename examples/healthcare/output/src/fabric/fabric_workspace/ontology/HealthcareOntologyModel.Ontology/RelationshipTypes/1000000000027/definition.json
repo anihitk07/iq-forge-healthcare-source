@@ -3,7 +3,7 @@
     "namespace":  "usertypes",
     "id":  "1000000000027",
     "name":  "prescribes",
-    "namespaceType":  "Custom",
+    "namespaceType":  "Imported",
     "source":  {
                    "entityTypeId":  "1000000000006"
                },

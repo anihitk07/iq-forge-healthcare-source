@@ -3,7 +3,7 @@
     "namespace":  "usertypes",
     "id":  "1000000000022",
     "name":  "has_appointment",
-    "namespaceType":  "Custom",
+    "namespaceType":  "Imported",
     "source":  {
                    "entityTypeId":  "1000000000001"
                },
