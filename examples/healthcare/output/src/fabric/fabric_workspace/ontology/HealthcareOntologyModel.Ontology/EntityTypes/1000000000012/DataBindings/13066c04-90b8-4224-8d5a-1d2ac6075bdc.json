@@ -1,23 +1,23 @@
 {
     "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
-    "id":  "33a9ec62-ec1e-46c6-a511-b15c122e8d09",
+    "id":  "13066c04-90b8-4224-8d5a-1d2ac6075bdc",
     "dataBindingConfiguration":  {
                                      "dataBindingType":  "NonTimeSeries",
                                      "propertyBindings":  [
                                                               {
-                                                                  "sourceColumnName":  "PrescriptionId",
-                                                                  "targetPropertyId":  "1000000000020"
+                                                                  "sourceColumnName":  "AppointmentId",
+                                                                  "targetPropertyId":  "1000000000013"
                                                               },
                                                               {
                                                                   "sourceColumnName":  "Name",
-                                                                  "targetPropertyId":  "1000000000021"
+                                                                  "targetPropertyId":  "1000000000014"
                                                               }
                                                           ],
                                      "sourceTableProperties":  {
                                                                    "sourceType":  "LakehouseTable",
                                                                    "workspaceId":  "27818fad-0450-42b9-a4a0-db84075ac8d7",
                                                                    "itemId":  "e6cd0b76-50e8-498f-9cd0-89251fae70c2",
-                                                                   "sourceTableName":  "prescription",
+                                                                   "sourceTableName":  "appointment",
                                                                    "sourceSchema":  "dbo"
                                                                }
                                  }

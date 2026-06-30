@@ -1,6 +1,6 @@
 {
     "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
-    "id":  "23b1d441-4ebf-484e-a323-67cc8119cd7d",
+    "id":  "e1cfe924-03de-4f04-bce5-dde72e6fb80c",
     "dataBindingConfiguration":  {
                                      "dataBindingType":  "NonTimeSeries",
                                      "propertyBindings":  [

@@ -1,23 +1,23 @@
 {
     "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
-    "id":  "849e7851-b097-484f-ac38-6a0103538eac",
+    "id":  "75109309-f230-4b83-9ca9-c8e802aa2a24",
     "dataBindingConfiguration":  {
                                      "dataBindingType":  "NonTimeSeries",
                                      "propertyBindings":  [
                                                               {
-                                                                  "sourceColumnName":  "AppointmentId",
-                                                                  "targetPropertyId":  "1000000000013"
+                                                                  "sourceColumnName":  "PrescriptionId",
+                                                                  "targetPropertyId":  "1000000000020"
                                                               },
                                                               {
                                                                   "sourceColumnName":  "Name",
-                                                                  "targetPropertyId":  "1000000000014"
+                                                                  "targetPropertyId":  "1000000000021"
                                                               }
                                                           ],
                                      "sourceTableProperties":  {
                                                                    "sourceType":  "LakehouseTable",
                                                                    "workspaceId":  "27818fad-0450-42b9-a4a0-db84075ac8d7",
                                                                    "itemId":  "e6cd0b76-50e8-498f-9cd0-89251fae70c2",
-                                                                   "sourceTableName":  "appointment",
+                                                                   "sourceTableName":  "prescription",
                                                                    "sourceSchema":  "dbo"
                                                                }
                                  }
