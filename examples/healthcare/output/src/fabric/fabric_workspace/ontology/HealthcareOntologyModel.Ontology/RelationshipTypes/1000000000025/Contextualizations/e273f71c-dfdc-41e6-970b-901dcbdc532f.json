@@ -1,6 +1,6 @@
 {
     "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
-    "id":  "eba8a3e9-c25b-4e32-afa0-4d6fc2acaace",
+    "id":  "e273f71c-dfdc-41e6-970b-901dcbdc532f",
     "dataBindingTable":  {
                              "workspaceId":  "27818fad-0450-42b9-a4a0-db84075ac8d7",
                              "itemId":  "e6cd0b76-50e8-498f-9cd0-89251fae70c2",
@@ -16,8 +16,8 @@
                              ],
     "targetKeyRefBindings":  [
                                  {
-                                     "sourceColumnName":  "AppointmentId",
-                                     "targetPropertyId":  "1000000000013"
+                                     "sourceColumnName":  "DiagnosisId",
+                                     "targetPropertyId":  "1000000000016"
                                  }
                              ]
 }
