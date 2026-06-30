@@ -1,23 +1,23 @@
 {
     "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
-    "id":  "206d2432-9130-438f-b1c8-590f5c863c84",
+    "id":  "aa2f2d24-5363-49dc-90b0-e0ea910b6450",
     "dataBindingTable":  {
                              "workspaceId":  "27818fad-0450-42b9-a4a0-db84075ac8d7",
                              "itemId":  "e6cd0b76-50e8-498f-9cd0-89251fae70c2",
-                             "sourceTableName":  "diagnosis",
+                             "sourceTableName":  "provider",
                              "sourceSchema":  "dbo",
                              "sourceType":  "LakehouseTable"
                          },
     "sourceKeyRefBindings":  [
                                  {
-                                     "sourceColumnName":  "DiagnosisId",
-                                     "targetPropertyId":  "1000000000016"
+                                     "sourceColumnName":  "ProviderId",
+                                     "targetPropertyId":  "1000000000007"
                                  }
                              ],
     "targetKeyRefBindings":  [
                                  {
-                                     "sourceColumnName":  "PrescriptionId",
-                                     "targetPropertyId":  "1000000000020"
+                                     "sourceColumnName":  "AppointmentId",
+                                     "targetPropertyId":  "1000000000013"
                                  }
                              ]
 }

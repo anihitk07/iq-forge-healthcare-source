@@ -1,27 +1,35 @@
 {
     "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
-    "id":  "30c42823-0d8d-45e2-9267-8db3790f8121",
+    "id":  "f831511a-d45d-4b11-a284-256ca29002d7",
     "dataBindingConfiguration":  {
                                      "dataBindingType":  "NonTimeSeries",
                                      "propertyBindings":  [
                                                               {
-                                                                  "sourceColumnName":  "DiagnosisId",
-                                                                  "targetPropertyId":  "1000000000016"
+                                                                  "sourceColumnName":  "ProviderId",
+                                                                  "targetPropertyId":  "1000000000007"
                                                               },
                                                               {
                                                                   "sourceColumnName":  "Name",
-                                                                  "targetPropertyId":  "1000000000017"
+                                                                  "targetPropertyId":  "1000000000008"
+                                                              },
+                                                              {
+                                                                  "sourceColumnName":  "AppointmentId",
+                                                                  "targetPropertyId":  "1000000000009"
+                                                              },
+                                                              {
+                                                                  "sourceColumnName":  "DiagnosisId",
+                                                                  "targetPropertyId":  "1000000000010"
                                                               },
                                                               {
                                                                   "sourceColumnName":  "PrescriptionId",
-                                                                  "targetPropertyId":  "1000000000018"
+                                                                  "targetPropertyId":  "1000000000011"
                                                               }
                                                           ],
                                      "sourceTableProperties":  {
                                                                    "sourceType":  "LakehouseTable",
                                                                    "workspaceId":  "27818fad-0450-42b9-a4a0-db84075ac8d7",
                                                                    "itemId":  "e6cd0b76-50e8-498f-9cd0-89251fae70c2",
-                                                                   "sourceTableName":  "diagnosis",
+                                                                   "sourceTableName":  "provider",
                                                                    "sourceSchema":  "dbo"
                                                                }
                                  }
